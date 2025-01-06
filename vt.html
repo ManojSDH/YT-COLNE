@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube - Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #ff0000;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            flex: 1;
+            margin: 0 20px;
+            display: flex;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+        }
+
+        .search-bar button {
+            background-color: #eeeeee;
+            border: 1px solid #ccc;
+            border-left: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .search-bar button:hover {
+            background-color: #ddd;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-profile img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+
+        .content {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+             flex-wrap: wrap; 
+            justify-content: center;
+           
+        }
+
+        .video-card {
+            background-color: white;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            gap: 20px;
+        }
+
+        .video-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .video-details {
+            padding: 10px;
+        }
+
+        .video-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 5px 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .channel-name {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .views-time {
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">YouTube</div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button>🔍</button>
+    </div>
+    <div class="user-profile">
+        <img src="download.jpg" alt="User Profile">
+    </div>
+</header>
+
+<div class="content">
+    <div class="video-card">
+        <img src="images (2).jpg" alt="Video Thumbnail">
+        <div class="video-details">
+            <div class="video-title">Sample Video Title</div>
+            <div class="channel-name">Channel Name</div>
+            <div class="views-time">1M views • 1 week ago</div>
+        </div>
+    </div>
+
+    <div class="video-card">
+        <img src="images (3).jpg" alt="Video Thumbnail">
+        <div class="video-details">
+            <div class="video-title">Another Video Title</div>
+            <div class="channel-name">Another Channel</div>
+            <div class="views-time">500K views • 2 days ago</div>
+        </div>
+    </div>
+
+    <div class="video-card">
+        <img src="images.jpg" alt="Video Thumbnail">
+        <div class="video-details">
+            <div class="video-title">Yet Another Video</div>
+            <div class="channel-name">Yet Another Channel</div>
+            <div class="views-time">2M views • 3 weeks ago</div>
+        </div>
+    </div>
+    <div class="video-card">
+        <img src="images (4).jpg" alt="Video Thumbnail">
+        <div class="video-details">
+            <div class="video-title"> Another Video</div>
+            <div class="channel-name"> Channel</div>
+            <div class="views-time">20M views • 4 weeks ago</div>
+        </div>
+    </div>
+    <div class="video-card">
+        <img src="download (1).jpg" alt="Video Thumbnail">
+        <div class="video-details">
+            <div class="video-title">cybertruck</div>
+            <div class="channel-name"> Channel</div>
+            <div class="views-time">3M views • 6 weeks ago</div>
+        </div>
+    </div>
+    <div class="video-card">
+        <img src="download.jpg" alt="Video Thumbnail">
+        <div class="video-details">
+            <div class="video-title">anime Video</div>
+            <div class="channel-name">cyber Channel</div>
+            <div class="views-time">5M views • 1 weeks ago</div>
+        </div>
+    </div>
+    <div class="video-card">
+        <img src="images (4).jpg" alt="Video Thumbnail">
+        <div class="video-details">
+            <div class="video-title">art Video</div>
+            <div class="channel-name">art Channel</div>
+            <div class="views-time">23M views • 3 weeks ago</div>
+        </div>
+    </div>
+    <div class="video-card">
+        <img src="images (3).jpg" alt="Video Thumbnail">
+        <div class="video-details">
+            <div class="video-title">go go game</div>
+            <div class="channel-name">consciousness Channel</div>
+            <div class="views-time">1M views • 5 weeks ago</div>
+        </div>
+    </div>
+    <div class="video-card">
+        <img src="images (1).jpg" alt="Video Thumbnail">
+        <div class="video-details">
+            <div class="video-title">animal Video</div>
+            <div class="channel-name">animal world Channel</div>
+            <div class="views-time">100M views • 1weeks ago</div>
+        </div>
+    </div>
+    <div class="video-card">
+        <img src="images (3).jpg" alt="Video Thumbnail">
+        <div class="video-details">
+            <div class="video-title">Another Video Title</div>
+            <div class="channel-name">Another Channel</div>
+            <div class="views-time">500K views • 2 days ago</div>
+        </div>
+    </div>
+    <div class="video-card">
+        <img src="images (3).jpg" alt="Video Thumbnail">
+        <div class="video-details">
+            <div class="video-title">go go game</div>
+            <div class="channel-name">consciousness Channel</div>
+            <div class="views-time">1M views • 5 weeks ago</div>
+        </div>
+    </div>
+    <div class="video-card">
+        <img src="download.jpg" alt="Video Thumbnail">
+        <div class="video-details">
+            <div class="video-title">anime Video</div>
+            <div class="channel-name">cyber Channel</div>
+            <div class="views-time">5M views • 1 weeks ago</div>
+        </div>
+</div>
+
+</body>
+</html>
